@@ -1,19 +1,16 @@
 # slurm-stats
-Plots and Viz from the "Slurm in 2021" presentation
+Some python scripts to collect stats about SLURM
 
 # Pre-Requisites
 
 * create a python env with python 3.9+
 * install requirements in this env `pip install -r requirements.txt`
+* see the different `requirements.txt` files in subfolders
 
-# Usage
+# GPU Snapshot
+* Generate snapshots of GPU usage
+* see [snapshot](snapshot)
 
-* log in the SLURM cluster head node
-* launch `bash run_sacct.sh`
-* it create a file named `slurm_stats.csv`
-
-* launch a jupyter lab server from your python env
-* open the notebook `slurm_accounting.ipynb`
-* adjust the path to the CSV file
-* run all cells to get all plots
-* each plot is saved in a PDF file
+# Yearly Stats
+* Generate PDF for SOOS slides
+* see [soos_2022](soos_2022)
